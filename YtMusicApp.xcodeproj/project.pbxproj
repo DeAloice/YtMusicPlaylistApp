@@ -32,6 +32,7 @@
 		003506302FC6AEFD007EFC6C /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		003506322FC6AF11007EFC6C /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		003506342FC6B8CD007EFC6C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		003506352FC6BC52007EFC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		003506162FC6ACC5007EFC6C /* YtMusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				003506352FC6BC52007EFC6C /* Info.plist */,
 				003506172FC6ACC5007EFC6C /* YtMusicApp.swift */,
 				003506252FC6ADC1007EFC6C /* Services */,
 				003506262FC6ADC8007EFC6C /* Views */,
@@ -197,6 +199,7 @@
 /* Begin XCBuildConfiguration section */
 		003506202FC6ACC8007EFC6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003506342FC6B8CD007EFC6C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -260,6 +263,7 @@
 		};
 		003506212FC6ACC8007EFC6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003506342FC6B8CD007EFC6C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -325,6 +329,7 @@
 				DEVELOPMENT_TEAM = VW2B56BY3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YtMusicApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -354,6 +359,7 @@
 				DEVELOPMENT_TEAM = VW2B56BY3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YtMusicApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

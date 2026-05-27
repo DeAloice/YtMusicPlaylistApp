@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct FeedView: View {
+    
+    @State private var videos = [Video]()
+    @State private var selectedVideo: Video?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(videos) { v in
+            VideoRowView(video: v)
+                .onTapGesture {
+                    selectedVideo = v
+                }
+                .listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
+        .scrollIndicators(.hidden)
+        .task {
+            self.videos = await DataService().getVideos()
+        }
+        .sheet(item: $selectedVideo) { v in
+            VideoDetailView(video: v)
+        }
     }
 }
 

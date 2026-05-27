@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct VideoDetailView: View {
+    
+    var video: Video
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack (alignment: .leading) {
+            
+            // Video Player
+            
+            
+            // Title and Description
+            ScrollView {
+                VStack (alignment: .leading, spacing: 30) {
+                    Text(video.snippet?.title ?? "")
+                        .font(.headline)
+                        .bold()
+                    Text(video.snippet?.description ?? "")
+                }
+            }
+            .scrollIndicators(.hidden)
+            .padding()
+        }
     }
-}
-
-#Preview {
-    VideoDetailView()
 }
