@@ -22,6 +22,7 @@ struct FeedView: View {
         }
         .listStyle(.plain)
         .scrollIndicators(.hidden)
+        .padding(.horizontal)
         .task {
             self.videos = await DataService().getVideos()
         }
