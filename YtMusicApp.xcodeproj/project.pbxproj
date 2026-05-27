@@ -31,6 +31,7 @@
 		0035062E2FC6AED2007EFC6C /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		003506302FC6AEFD007EFC6C /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		003506322FC6AF11007EFC6C /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		003506342FC6B8CD007EFC6C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				003506272FC6ADCE007EFC6C /* Models */,
 				0035061B2FC6ACC8007EFC6C /* Assets.xcassets */,
 				0035061D2FC6ACC8007EFC6C /* Preview Content */,
+				003506342FC6B8CD007EFC6C /* Config.xcconfig */,
 			);
 			path = YtMusicApp;
 			sourceTree = "<group>";
