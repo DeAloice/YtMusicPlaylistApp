@@ -14,6 +14,7 @@
 		0035062B2FC6AE3A007EFC6C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035062A2FC6AE3A007EFC6C /* FeedView.swift */; };
 		003506312FC6AEFD007EFC6C /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003506302FC6AEFD007EFC6C /* Video.swift */; };
 		003CBFC62FC6E0B80023B3DC /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 003CBFC52FC6E0B80023B3DC /* YouTubePlayerKit */; };
+		0089C9232FCB10110022A5DE /* VideoDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089C9222FCB10110022A5DE /* VideoDetailsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		003506302FC6AEFD007EFC6C /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		003506342FC6B8CD007EFC6C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		003506352FC6BC52007EFC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0089C9222FCB10110022A5DE /* VideoDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				003506302FC6AEFD007EFC6C /* Video.swift */,
+				0089C9222FCB10110022A5DE /* VideoDetailsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0089C9232FCB10110022A5DE /* VideoDetailsResponse.swift in Sources */,
 				0035062B2FC6AE3A007EFC6C /* FeedView.swift in Sources */,
 				003506292FC6AE0E007EFC6C /* DataService.swift in Sources */,
 				003506312FC6AEFD007EFC6C /* Video.swift in Sources */,

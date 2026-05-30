@@ -16,6 +16,10 @@ struct FeedView: View {
     @State private var batchIndex:Int = 0
     
     @State private var player: YouTubePlayer?
+    
+    @State private var playbackTask: Task<Void, Never>?
+    @State private var currentDuration: Int = 0
+    @State private var totalDuration: Int = 0
 
     var body: some View {
         Group {
@@ -50,11 +54,6 @@ struct FeedView: View {
     private func playNext() {
         Task {
             if batchIndex >= currentBatch.count {
-                if hasReachedEnd {
-                    pageToken = nil
-                    hasReachedEnd = false
-                }
-                
                 await loadNextBatch()
             }
             
@@ -64,6 +63,10 @@ struct FeedView: View {
             batchIndex += 1
             
             let id = video.snippet?.resourceId?.videoId ?? ""
+            
+            let duration = await DataService().getVidDuration(vidId: id)
+            currentDuration = duration
+            totalDuration = duration
             
             if player == nil {
                 player = YouTubePlayer(
@@ -80,11 +83,28 @@ struct FeedView: View {
     }
     
     private func scheduleNext() {
-        Task {
-            try? await Task.sleep(for: .seconds(210))
-
-            await MainActor.run {
-                playNext()
+        
+        playbackTask?.cancel()
+        
+        playbackTask = Task {
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(1))
+                
+                guard let player else { continue }
+                
+                do {
+                    let currentTime = try await player.getCurrentTime()
+                    
+                    if currentTime.value >= Double(currentDuration - 1) || currentTime.value >= Double(totalDuration) {
+                        await MainActor.run {
+                            playNext()
+                        }
+                        
+                        return
+                    }
+                } catch {
+                    print("problem scheduling next song: ", error)
+                }
             }
         }
     }
