@@ -11,7 +11,7 @@ import SwiftUI
 struct YtMusicApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            FeedView()
         }
     }
 }

@@ -8,30 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		003506182FC6ACC5007EFC6C /* YtMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003506172FC6ACC5007EFC6C /* YtMusicApp.swift */; };
-		0035061A2FC6ACC5007EFC6C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003506192FC6ACC5007EFC6C /* HomeView.swift */; };
 		0035061C2FC6ACC8007EFC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0035061B2FC6ACC8007EFC6C /* Assets.xcassets */; };
 		0035061F2FC6ACC8007EFC6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0035061E2FC6ACC8007EFC6C /* Preview Assets.xcassets */; };
 		003506292FC6AE0E007EFC6C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003506282FC6AE0E007EFC6C /* DataService.swift */; };
 		0035062B2FC6AE3A007EFC6C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035062A2FC6AE3A007EFC6C /* FeedView.swift */; };
-		0035062D2FC6AEC4007EFC6C /* VideoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035062C2FC6AEC4007EFC6C /* VideoRowView.swift */; };
-		0035062F2FC6AED2007EFC6C /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035062E2FC6AED2007EFC6C /* VideoDetailView.swift */; };
 		003506312FC6AEFD007EFC6C /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003506302FC6AEFD007EFC6C /* Video.swift */; };
-		003506332FC6AF11007EFC6C /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003506322FC6AF11007EFC6C /* Playlist.swift */; };
 		003CBFC62FC6E0B80023B3DC /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 003CBFC52FC6E0B80023B3DC /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003506142FC6ACC5007EFC6C /* YtMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YtMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003506172FC6ACC5007EFC6C /* YtMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YtMusicApp.swift; sourceTree = "<group>"; };
-		003506192FC6ACC5007EFC6C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0035061B2FC6ACC8007EFC6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0035061E2FC6ACC8007EFC6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		003506282FC6AE0E007EFC6C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0035062A2FC6AE3A007EFC6C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		0035062C2FC6AEC4007EFC6C /* VideoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRowView.swift; sourceTree = "<group>"; };
-		0035062E2FC6AED2007EFC6C /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		003506302FC6AEFD007EFC6C /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		003506322FC6AF11007EFC6C /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		003506342FC6B8CD007EFC6C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		003506352FC6BC52007EFC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,10 +90,7 @@
 		003506262FC6ADC8007EFC6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				003506192FC6ACC5007EFC6C /* HomeView.swift */,
 				0035062A2FC6AE3A007EFC6C /* FeedView.swift */,
-				0035062C2FC6AEC4007EFC6C /* VideoRowView.swift */,
-				0035062E2FC6AED2007EFC6C /* VideoDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				003506302FC6AEFD007EFC6C /* Video.swift */,
-				003506322FC6AF11007EFC6C /* Playlist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,11 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0035062B2FC6AE3A007EFC6C /* FeedView.swift in Sources */,
-				0035062F2FC6AED2007EFC6C /* VideoDetailView.swift in Sources */,
-				0035062D2FC6AEC4007EFC6C /* VideoRowView.swift in Sources */,
-				003506332FC6AF11007EFC6C /* Playlist.swift in Sources */,
 				003506292FC6AE0E007EFC6C /* DataService.swift in Sources */,
-				0035061A2FC6ACC5007EFC6C /* HomeView.swift in Sources */,
 				003506312FC6AEFD007EFC6C /* Video.swift in Sources */,
 				003506182FC6ACC5007EFC6C /* YtMusicApp.swift in Sources */,
 			);

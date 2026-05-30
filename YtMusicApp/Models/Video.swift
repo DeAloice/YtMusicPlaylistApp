@@ -8,7 +8,10 @@
 import Foundation
 
 struct Video: Decodable, Identifiable {
-    var id: String
+    var id: String {
+         snippet?.resourceId?.videoId ?? UUID().uuidString
+     }
+    
     var snippet: Snippet?
 }
 
